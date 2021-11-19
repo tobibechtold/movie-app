@@ -16,6 +16,7 @@ describe('MovieCardComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MovieCardComponent);
     component = fixture.componentInstance;
+    component.movie = {poster_path: 'asdf', vote_average: 0, original_title: 'test', id: 0, overview: 'asdf'}
     fixture.detectChanges();
   });
 
