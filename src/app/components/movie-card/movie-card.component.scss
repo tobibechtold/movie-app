@@ -1,0 +1,27 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 16px;
+  background-color: #373B69;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-image {
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 16px 0 16px;
+}
+
+.movie-rating {
+  color: green;
+}
