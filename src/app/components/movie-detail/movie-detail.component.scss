@@ -20,14 +20,14 @@
 }
 
 .movie-card {
-  width: 60%;
+  width: 40%;
   background-color: #EBE5E2;
   margin: 32px;
   padding: 8px;
   border-radius: 4px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .movie-card {
     width: 80%;
   }
