@@ -1,8 +1,9 @@
-<div class="movie-detail-container" *ngIf="this.movie">
+<div class="movie-detail-container" *ngIf="this.movie" [style.background]="'url(https://image.tmdb.org/t/p/original/' + movie.backdrop_path + ')'"
+     [style.background-size]="'cover'">
   <div class="movie-card">
     <div class="movie-title-section">
       <img class="movie-image" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
-      <h3>{{movie.original_title}}</h3>
+      <h3>{{movie.original_title}} ({{getYear(movie)}})</h3>
     </div>
     <div class="movie-overview">
       <p>{{movie.overview}}</p>

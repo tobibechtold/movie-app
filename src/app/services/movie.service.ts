@@ -37,6 +37,10 @@ export interface Movie {
   overview: string,
   poster_path: string,
   vote_average: number,
+  backdrop_path?: string,
+  release_date?: string,
+  runtime?: number,
+  vote_count?: number
 }
 
 export interface SearchResult {

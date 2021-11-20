@@ -19,8 +19,17 @@ export class MovieDetailComponent implements OnInit {
       this.id = params['id'];
       this.movieService.getMovie(this.id).subscribe(movie => {
         this.movie = movie;
+        console.log(this.movie);
       });
     })
+  }
+
+  getYear(movie: Movie): string {
+    if (movie.release_date) {
+      return new Date(movie.release_date).getFullYear() + '';
+    }
+
+    return 'unknown';
   }
 
 }
