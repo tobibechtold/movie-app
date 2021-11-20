@@ -1,0 +1,32 @@
+.container {
+  color: white;
+
+  h1 {
+    margin-left: 40px;
+  }
+
+  h5 {
+    margin-left: 40px;
+  }
+}
+
+#searchbar {
+  width: 85%;
+  margin-left: 40px;
+  margin-top: 40px;
+  border-radius: 6px;
+  background-color: #373B69;
+  font-size: 18px;
+  color: white;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+app-movie-card {
+  cursor: pointer;
+}

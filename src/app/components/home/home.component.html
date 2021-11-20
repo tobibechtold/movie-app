@@ -1,0 +1,14 @@
+<div class="container">
+  <input #search type="text" id="searchbar" placeholder="Search..." autocomplete="off" (keyup)="searchMovie(search.value)">
+  <div class="search-results" *ngIf="search.value">
+    <h1>Search results</h1>
+    <h5 *ngIf="searchResult.length === 0">There seems to be no movie with the title "{{search.value}}"...</h5>
+    <div class="movie-container">
+      <app-movie-card *ngFor="let movie of searchResult" [movie]="movie"></app-movie-card>
+    </div>
+  </div>
+  <h1>Popular movies</h1>
+  <div class="movie-container">
+    <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
+  </div>
+</div>

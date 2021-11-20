@@ -1,0 +1,24 @@
+.movie-title-section {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    max-height: 200px;
+    width: auto;
+  }
+}
+
+.movie-detail-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.movie-card {
+  width: 60%;
+  height: auto;
+  background-color: #EBE5E2;
+  margin: 32px;
+  padding: 8px;
+  border-radius: 4px;
+}

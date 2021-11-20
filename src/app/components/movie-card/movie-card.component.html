@@ -1,4 +1,4 @@
-<div class="movie-card">
+<div class="movie-card" [routerLink]="['/movie', movie.id]" routerLinkActive="active">
   <img class="movie-image" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
   <div class="movie-info">
     <h5>{{movie.original_title}}</h5>

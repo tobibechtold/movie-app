@@ -8,12 +8,5 @@ import {Movie, MovieService} from './services/movie.service';
 })
 export class AppComponent {
   title = 'movie-app';
-  movies: Array<Movie> = [];
 
-  constructor(movieService: MovieService) {
-    movieService.getPopularMovies().subscribe(movie => {
-      this.movies = movie.results;
-      console.log(movie);
-    });
-  }
 }
